@@ -1,0 +1,127 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del Body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('ImgU/blurred-dental-clinic-background-defocused-600nw-2326575003.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    padding-top: 80px; /* Para no solaparse con el menú */
+}
+
+/* Estilos para el menú */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para la imagen de bienvenida */
+.imagen-bienvenida img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px; /* Limitar la altura de la imagen */
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Sección de Servicios */
+.servicios {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #f1f1f1;
+}
+
+/* Estilo de las tarjetas de servicios */
+.tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px; /* Aumentar el espacio entre las tarjetas */
+    max-width: 800px; /* Aumentar el tamaño de la tarjeta */
+    width: 90%; /* Para que no ocupen todo el ancho de la pantalla */
+    margin: 20px auto; /* Centrado automático con un poco de margen superior e inferior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px); /* Efecto de subida */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+/* Contenedor de la imagen de cada tarjeta */
+.imagen-servicio img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 30px; /* Más espacio entre la imagen y el texto */
+}
+
+/* Información dentro de la tarjeta */
+.info-tarjeta {
+    flex: 1; /* El texto ocupa el espacio restante */
+    color: #fff;
+}
+
+.info-tarjeta h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.info-tarjeta p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Botón de la tarjeta */
+.info-tarjeta button {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.info-tarjeta button:hover {
+    background-color: #e67e22;
+}
