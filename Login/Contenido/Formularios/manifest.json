@@ -1,0 +1,22 @@
+{
+    "name": "Historia Clínica",
+    "short_name": "Historia Clínica",
+    "description": "Aplicación para gestionar historias clínicas",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "logo/icons/icon-192x192.php",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "logo/icons/icon-512x512png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

@@ -1,0 +1,160 @@
+/* General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Estilo para la barra de navegación */
+        nav {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ff8c00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-shadow: 0 0 6px #ff8c00, 0 0 12px #ff4500;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav a:hover {
+            color: #f5a623;
+            text-shadow: 0 0 8px #ff4500, 0 0 16px #f5a623;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            margin-top: 80px; /* Espacio para la barra de navegación */
+            animation: fadeIn 1s ease;
+        }
+
+        /* Título principal con efecto neón */
+        h1 {
+            font-size: 2rem;
+            color: #f5a623;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 8px #f5a623, 0 0 15px #ff8c00, 0 0 30px #ff4500;
+            animation: neon 1.5s infinite alternate;
+        }
+
+        /* Barra de búsqueda */
+        #searchBar {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+            background-color: #222;
+            color: #fff;
+        }
+
+        #searchBar:focus {
+            box-shadow: 0 0 8px #ff4500, 0 0 12px #ff8c00;
+        }
+
+        /* Contenedor de carpetas de pacientes */
+        .folders {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            animation: slideIn 1.2s ease-out;
+        }
+
+        /* Carpeta de cada paciente con efecto neón */
+        .folder {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 10px;
+            width: 120px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efecto neón en el nombre del paciente */
+        .folder h2 a {
+            text-decoration: none;
+            color: #ff8c00;
+            font-size: 1rem;
+            font-weight: bold;
+            text-shadow: 0 0 6px #ff8c00, 0 0 12px #ff4500;
+            transition: color 0.3s;
+        }
+
+        /* Efecto de luces de neón al hacer hover */
+        .folder:hover {
+            box-shadow: 0 0 8px #ff8c00, 0 0 15px #ff4500, 0 0 30px #f5a623;
+            transform: scale(1.05);
+        }
+
+        .folder h2 a:hover {
+            color: #f5a623;
+            text-shadow: 0 0 8px #ff4500, 0 0 16px #f5a623, 0 0 32px #ff8c00;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 8px #ff4500, 0 0 15px #ff8c00, 0 0 30px #f5a623;
+            }
+            to {
+                text-shadow: 0 0 15px #ff8c00, 0 0 30px #ff4500, 0 0 45px #f5a623;
+            }
+        }
