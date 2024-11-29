@@ -1,0 +1,50 @@
+body {
+    background-image: url('oral-dental-hygiene-healthy-white-600nw-1517909696.webp'); /* Reemplaza esta ruta con la ubicación de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen en su lugar cuando se hace scroll */
+    color: #fff; /* Cambia el color del texto a blanco para que resalte sobre el fondo */
+    font-size: 18px; /* Aumenta el tamaño de la fuente a 18px (ajusta según sea necesario) */
+}
+
+
+main {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para que el texto se lea mejor */
+    border-radius: 40px; /* Opcional: bordes redondeados */
+    font-size: 25px; /* Aumenta el tamaño de la fuente a 20px (ajusta según sea necesario) */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro y semi-transparente para el menú */
+    padding: 10px;
+}
+
+
+nav a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Añadir margen superior al contenido */
+main {
+    padding: 20px;
+    margin-top: 60px;  /* Ajusta el valor según el alto del menú */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
