@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background-image: url('Logo/Fondo1.jpeg');
+    background-image: url('Fondo1.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
